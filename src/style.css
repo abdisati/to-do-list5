@@ -29,8 +29,8 @@
       disabled:transform-none;
   }
 
-   .list-item {
-    @apply flex items-center justify-between
+   .list-items {
+    @apply flex items-center justify-around
       px-4 py-2
       rounded-md
       transition-all duration-200 ease-out
