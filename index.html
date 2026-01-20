@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
     <title>to-do-list5</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="max-w-fit mx-auto mt-8">
+    <div class="w-auto bg-slate-50 min-h-55 rounded-2xl p-4 shadow-2xl box-border
+">
+      <div class="flex justify-around px-3 py-2 gap-2 bg-gray-300 rounded-2xl h-auto w-auto ">
+        <input id="input" type="text" placeholder="Type the task..." class="grow text-2xl bg-white font-mono "><button class="bg-amber-700 px-4 text-2xl rounded-2xl shadow-xl/30">Add</button>
+      </div class="bg-slate-400">
+      <div><ul id="result" class="bg-amber-50"></ul></div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
