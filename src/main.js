@@ -9,6 +9,7 @@ const addEl=document.getElementById("add");
 const inputEl=document.getElementById("input");
 const resultEl=document.getElementById("result");
 
+//rendering function
 function render(){
   if(!tasks.length) return;
 
@@ -30,3 +31,8 @@ function render(){
   });
 
 }
+
+function save(){
+  localStorage.setItem("tasks",JSON.stringify(tasks));
+}
+
