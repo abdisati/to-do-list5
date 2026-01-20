@@ -28,4 +28,30 @@
       disabled:shadow-none
       disabled:transform-none;
   }
+
+   .list-item {
+    @apply flex items-center justify-between
+      px-4 py-2
+      rounded-md
+      transition-all duration-200 ease-out
+      cursor-pointer
+
+      hover:bg-gray-100
+      hover:translate-x-0.5
+
+      active:bg-gray-200
+      active:translate-x-0
+
+      focus:outline-none
+      focus-visible:ring-2
+      focus-visible:ring-blue-500
+      focus-visible:ring-offset-2;
+
+    @apply shadow-sm;
+  }
+
+  /* Selected list item - strike-through */
+  .list-item-selected {
+    @apply line-through text-gray-400;
+  }
 }
